@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Księgarnia</title>
+</head>
+
+<body>
+    <div class="product-app-container">
+        <div class="product-app-wapper">
+            <form action="javascript:;" class="form">
+                <input type="text" name="name" id="name" placeholder="Tytuł książki" aria-required="true">
+                <input type="number" name="prize" id="prize" placeholder="Cena książki" aria-required="true">
+                <input type="text" name="species" id="species" placeholder="Gatunek książki" aria-required="true">
+            </form>
+            <div class="button">
+                <button onclick="createItem()">Dodaj książkę</button>
+                <button onclick="readItem()">Wyświetl książki</button>
+                <button onclick="updateItem()">Edytuj książki</button>
+                <button onclick="deleteItem()">Usuń książki</button>
+            </div>
+            <div class="table-wrapper">
+                <table class="table">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src=product.js></script>
+</body>
+
+</html>
